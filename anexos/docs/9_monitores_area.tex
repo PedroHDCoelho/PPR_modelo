@@ -1,0 +1,29 @@
+\chapter{Descrição dos Monitores de Área}
+\label{ch:descricao_monitores}
+
+A Instalação dispõe de (2) dois monitores de área do tipo Geiger-Müller, listados na tabela \ref{tab:monitor_area}, e os respectivos Certificados de Calibração mais recentes encontram-se disponíveis nesse anexo na seção \ref{sec:certificados_monitores-area}.
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{5cm}|p{2.5cm}|p{2cm}|p{2cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Item & \color{white}\bfseries Fabricante & \color{white}\bfseries Modelo  & \color{white}\bfseries Nº Série\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/monitor_de_area.csv}{}{%
+        \obj & \fabricante & \modelo & \nserie }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Monitores de área.}
+    \label{tab:monitor_area}
+\end{table}
+\vfill
+
+\pagebreak
+\section{Certificados de Calibração dos Monitores de Área}
+\label{sec:certificados_monitores-area}
+
+\inserirPDF{./anexos/PDFs/Certificados de Calibração/Monitor de Area/Monitor de Area 1.pdf}
+
+%\inserirPDF{./anexos/PDFs/Certificados de Calibração/Monitor de Area/Monitor de Area 2.pdf}

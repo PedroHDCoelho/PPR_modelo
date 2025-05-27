@@ -1,0 +1,88 @@
+%%
+% ESSE TEMPLATE FOI DESENVOLVIDO POR PEDRO HENRIQUE DIAS COELHO COM OBJETIVO DE MELHORAR A ARQUITETURA E CONSTRUÇÃO DE RELATÓRIO DE PROTEÇÃO RADIOLÓGICA. SEU USO É DESTINADO A SUPERVISORES DE PROTEÇÃO RADIOLÓGICA E SEUS SUBSTITUTOS. O COMPARTILHAMENTO DESSA ARQUITETURA É DE USO LIVRE, MAS O AUTOR NÃO SE RESPONSABILIZA PELO CONTEÚDO INSERIDO E NEM MESMO DAS CONSEQUENCIAS LEGAIS COMO CONSEQUENCIA DO USO INCORRETO DESSE MODELO. 
+
+% PEDROHDCOELHO@GMAIL.COM
+% (11) 9 9347 4500
+
+%%
+
+% --- QUANTO A NATUREZA DO DOCUMENTO
+\def\titulo{Plano de Proteção Radiológica\\****}
+\def\autor{Departamento de Física Médica}
+\def\local{Goiânia}
+\def\ano{ANO}
+\def\mes{MES}
+\def\instituicao{**** - ****}
+\def\tipotrabalho{Plano de Proteção Radiológica}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\def\preambulo{O Plano de Proteção Radiológica compilado documento que se segue, tem por objetivo descrever deveres e diretos de todos os Indivíduos Ocupacionalmente Expostos e também diretrizes, projetos e bem-feiturias realizados por parte do \instituicao, para que as práticas sejam realizadas em consonância com as normas da CNEN.}
+% ---------------------------------------------------------------------------------------------------
+
+% --- QUANTO A PROTECAO RADIOLOGICA
+\def\titularA{TITULAR VAI AQUI}
+\def\titularACPF{****}
+
+\def\titularB{TITULAR VAI AQUI}
+\def\titularBCPF{****}
+
+\def\supervisor{SUPERVISOR VAI AQUI}
+\def\supervisorRT{****}
+\def\supervisorRA{****}
+
+\def\subsSupervisor{SUBSTITUTO SUPERVISOR VAI AQUI}
+\def\subsSupervisorRT{****}
+\def\subsSupervisorRA{****}
+
+\def\rt{RT VAI AQUI}
+\def\rtCRM{****}
+\def\rtCB{****}
+
+\def\subsRt{SUBSTITUTO RT VAI AQUI}
+\def\subsRtCRM{****}
+\def\subsRtCB{****}
+% ---------------------------------------------------------------------------------------------------
+
+% --- QUANTO A INSTALACAO
+\def\instalacaoNOME{NOME DA INSTALAÇÃO VAI AQUI}
+\def\instalacaoMATRICULA{****}
+\def\instalacaoCNPJ{****}
+\def\instalacaoRUA{****}
+\def\instalacaoCOMPLEMENTO{****}
+\def\instalacaoBAIRRO{****}
+\def\instalacaoCIDADE{****}
+\def\instalacaoUF{{****}}
+\def\instalacaoCEP{****}
+\def\instalacaoTELEFONE{****}
+\def\instalacaoGRUPO{****}
+\def\instalacaoSUBGRUPO{****}
+% ---------------------------------------------------------------------------------------------------
+
+% --- QUANTO A FORMATAÇÃO E PADRÃO DE CORES
+% --- mude seu padrao de cores aqui
+\definecolor{color1}{RGB}{46,108,150}
+\definecolor{color2}{RGB}{91, 177, 169}
+
+% --- 
+% Formato de tabelas e negrito colorido
+\newcolumntype{x}[1]{>{\centering\arraybackslash\vspace{0pt}}p{#1}}
+\newcolumntype{y}[1]{>{\arraybackslash\vspace{0pt}}p{#1}}
+\newcommand{\COLORtextbf}[1]{\textbf{\color{color1}#1}}
+
+\def\colorPDF{color2}
+\def\colorTABLE{color2}
+
+% --- 
+\renewcommand{\thesection}{\arabic{chapter}.{\arabic{section}}}
+\renewcommand{\thesection}{\arabic{chapter}.{\arabic{section}}}
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- 
+% Inserir PDFs
+\def\escalaPDF{0.9}
+\newcommand{\inserirPDF}[1]{
+    \begin{tcbraster}[raster columns=1,colframe = \colorPDF,colback = white,colbacktitle = \colorPDF!100,fonttitle = \small\ttfamily,boxsep = 0pt,toptitle = 1mm,bottomtitle = 1mm,drop lifted shadow,center title,title = {\imagename\ [\imagepage]}]
+        \centering \tcbincludepdf[scale=\escalaPDF , graphics orientation=portrait]{#1}
+    \end{tcbraster}
+}
+% ---------------------------------------------------------------------------------------------------

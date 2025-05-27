@@ -1,0 +1,171 @@
+%%
+% ESSE TEMPLATE FOI DESENVOLVIDO POR PEDRO HENRIQUE DIAS COELHO COM OBJETIVO DE MELHORAR A ARQUITETURA E CONSTRUÇÃO DE RELATÓRIO DE PROTEÇÃO RADIOLÓGICA. SEU USO É DESTINADO A SUPERVISORES DE PROTEÇÃO RADIOLÓGICA E SEUS SUBSTITUTOS. O COMPARTILHAMENTO DESSA ARQUITETURA É DE USO LIVRE, MAS O AUTOR NÃO SE RESPONSABILIZA PELO CONTEÚDO INSERIDO E NEM MESMO DAS CONSEQUENCIAS LEGAIS COMO CONSEQUENCIA DO USO INCORRETO DESSE MODELO. 
+
+% PEDROHDCOELHO@GMAIL.COM
+% (11) 9 9347 4500
+
+%%
+
+\documentclass[
+    article,
+	12pt,				% tamanho da fonte
+	%openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em verso e anverso. Oposto a oneside
+    chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=Title,		% títulos de seções convertidos em letras maiúsculas
+	subsection=Title,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+\usepackage[
+    a4paper,
+    total={170mm,225mm},
+    includehead,
+    headheight=30mm,
+    voffset=-1in
+]{geometry}
+
+% ---
+% Pacotes básicos 
+% ---
+\usepackage{lipsum}				% Para geração de dummy text
+\usepackage{fancyhdr}           % Para cabecalho
+\usepackage{helvet}             % Fonte de Texto
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nicematrix}         % Tabelas personalizadas
+\usepackage{xcolor}             % Controle das cores aprimoradas
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{subcaption}         % Colocar imagens subfigure
+\usepackage{placeins}           % Usar o FloatBarrier nas equacoes
+\usepackage{microtype} 			% Para melhorias de justificação
+\usepackage{pdfpages}           % Colocar arquivos PDF no documento
+
+% ---
+% Oacotes adicionados
+% ---
+\usepackage{enumitem}
+\usepackage{enumerate}
+\usepackage{csvsimple}
+\usepackage[most]{tcolorbox}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,amsthm}
+\usepackage{setspace}
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage{biblatex}           % Imports biblatex
+\addbibresource{PPR.bib}
+\nocite{nn301}
+\nocite{pr301_04}
+\nocite{nn602}
+\nocite{tecdoc1151}
+\nocite{trs398}
+\nocite{sevrra}
+\nocite{joana2018risk}
+
+% ---
+% Configurações de aparência do PDF final
+% ---
+
+
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+\makeatletter
+\hypersetup{
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=blue,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+
+\setlength{\parindent}{1.3cm} % O tamanho do parágrafo
+\setlength{\parskip}{0.2cm}  % Controle do espaçamento entre um parágrafo e outro - tente também \onelineskip
+
+\makeatother
+\makeindex
+
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing % Retira espaço extra obsoleto entre as frases.
+
+\pretextual
+\include{parametros}
+\include{inicio/capa}
+\include{inicio/folhaderosto}
+\include{inicio/folhaaprova}
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+
+\fancypagestyle{fancy}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{1pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyhead[R]{\includegraphics[width=\headheight]{anexos/imagens/logo-radiofis.png}}
+    %\fancyfoot[R]{\thepage}
+}
+
+\textual
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,RE]{\includegraphics[width=4cm]{anexos/imagens/logo-radiofis.png}}
+
+\pagebreak
+\input{caps/1_Identificação da Instalação}\vspace{2cm}
+\input{caps/2_Objetivo e Descrição}\vspace{2cm}
+\input{caps/3_Estrutura Organizacional}\vspace{2cm}
+\input{caps/4_Descrição dos IOEs}\vspace{2cm}
+\input{caps/5_Clasificação da Instalação}\vspace{2cm}
+\input{caps/6_Classificação e Descrição das Áreas}\vspace{2cm}
+\input{caps/7_Mecanismos e Sistema de Controle de Acesso}\vspace{2cm}
+\input{caps/8_Descrição dos Equipamentos e Fontes Emissoras de Radiação Ionizante}\vspace{2cm}
+\input{caps/9_Descrição das Fontes de Referência}\vspace{2cm}
+\input{caps/10_Descrição dos Instrumentos de Dosimetria}\vspace{2cm}
+\input{caps/11_Descrição dos Monitores de Área}\vspace{2cm}
+\input{caps/12_Descrição do Programa de Garantia da Qualidade}\vspace{2cm}
+\input{caps/13_Sistemas de Planejamento}\vspace{2cm}
+\input{caps/14_Técnicas de Tratamento}\vspace{2cm}
+\input{caps/15_Cálculo de Barreiras e Estimativas de Dose}\vspace{2cm}
+\input{caps/16_Monitoração Individual}\vspace{2cm}
+\input{caps/17_Monitoração de Áreas}\vspace{2cm}
+\input{caps/18_Gerência de Rejeitos Radioativos}\vspace{2cm}
+\input{caps/19_Descrição do Controle Médico dos IOEs}\vspace{2cm}
+\input{caps/20_Programa de Treinamento em Proteção Radiológica}\vspace{2cm}
+\input{caps/21_Programa de Educação Continuada}\vspace{2cm}
+\input{caps/22_Níveis Operacionais e Restrições}\vspace{2cm}
+\input{caps/23_Procedimentos de Emergência}
+\pagebreak
+
+
+\phantompart
+\postextual
+\printbibliography
+
+
+\include{anexos/anexos}
+
+
+%%
+% ESSE TEMPLATE FOI DESENVOLVIDO POR PEDRO HENRIQUE DIAS COELHO COM OBJETIVO DE MELHORAR A ARQUITETURA E CONSTRUÇÃO DE RELATÓRIO DE PROTEÇÃO RADIOLÓGICA. SEU USO É DESTINADO A SUPERVISORES DE PROTEÇÃO RADIOLÓGICA E SEUS SUBSTITUTOS. O COMPARTILHAMENTO DESSA ARQUITETURA É DE USO LIVRE, MAS O AUTOR NÃO SE RESPONSABILIZA PELO CONTEÚDO INSERIDO E NEM MESMO DAS CONSEQUENCIAS LEGAIS COMO CONSEQUENCIA DO USO INCORRETO DESSE MODELO. 
+
+% PEDROHDCOELHO@GMAIL.COM
+% (11) 9 9347 4500
+
+%%
+\end{document}

@@ -1,0 +1,20 @@
+\chapter{Descrição do Controle Médico dos IOEs - ASO}
+\label{ch:descricao_controle-medico}
+A tabela \ref{tab:asos}, abaixo, lista todos os IOES e a validade dos últimos atestados de saude ocupacional.
+
+\begin{table}[!ht]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{8cm}|p{3.5cm}|p{3.5cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries IOE & \color{white}\bfseries Último & \color{white}\bfseries Validade\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/asos.csv}{}{%
+        \nome & \ultimo & \validade}%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Controle de Atestado de Saúde Ocupacional.}
+    \label{tab:asos}
+\end{table}
+

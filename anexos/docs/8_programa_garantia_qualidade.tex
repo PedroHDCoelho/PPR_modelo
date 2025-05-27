@@ -1,0 +1,149 @@
+\chapter{Programa de Garantia da Qualidade}
+\label{ch:programa_garantia_qualidade}
+
+\section{Planilha de Controle de Qualidade e Resultados}
+\label{sec:planilhas}
+
+
+\clearpage
+\section{Testes e Tolerâncias}
+\label{sec:teste_tolerancia}
+Os testes realizados no Acelerador Linear seguem as periodicidades e tolerâncias dispostas no TECDOC 1151. Os testes diários realizados estão listados nas tabelas \ref{tab:testes_diarios_seguranca}, \ref{tab:testes_diarios_mecanicos} e \ref{tab:testes_diarios_dosimetricos}.  Os testes mensais realizados estão listados nas tabelas \ref{tab:testes_mensais_seguranca}, \ref{tab:testes_mensais_mecanicos} e \ref{tab:testes_mensais_dosimetricos}. E  os testes anuais realizados estão listados nas tabelas \ref{tab:testes_anuais_seguranca}, \ref{tab:testes_anuais_mecanicos} e \ref{tab:testes_anuais_dosimetricos}.
+\vfill
+
+\pagebreak
+\subsection{Diários}
+
+\begin{table}[!h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/diarios/seguranca.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes diários de segurança.}
+    \label{tab:testes_diarios_seguranca}
+\end{table}
+
+\begin{table}[!h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/diarios/dosimetrico.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes diários dosimétricos.}
+    \label{tab:testes_diarios_dosimetricos}
+\end{table}
+
+\begin{table}[!h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/diarios/mecanico.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes diários mecânicos.}
+    \label{tab:testes_diarios_mecanicos}
+\end{table}
+\vfill
+
+\pagebreak
+\subsection{Mensais}
+
+\begin{table}[h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/mensais/seguranca.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes mensais de segurança.}
+    \label{tab:testes_mensais_seguranca}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/mensais/dosimetrico.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes mensais dosimétricos.}
+    \label{tab:testes_mensais_dosimetricos}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/mensais/mecanico.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes mensais mecânicos.}
+    \label{tab:testes_mensais_mecanicos}
+\end{table}
+\vfill
+
+\clearpage
+\subsection{Anuais}
+
+\begin{table}[h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/anuais/seguranca.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes anuais de segurança.}
+    \label{tab:testes_anuais_seguranca}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/anuais/dosimetrico.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes anuais dosimétricos.}
+    \label{tab:testes_anuais_dosimetricos}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{NiceTabular}{|p{8cm}|p{4cm}|}\hline%
+    \rowcolor{color2!100}
+        \color{white}\bfseries Teste & \color{white}\bfseries Tolerância \\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/testes/anuais/mecanico.csv}{}{%
+        \teste & \tolerancia}%
+        \hline
+    \end{NiceTabular}
+    \caption{Testes anuais mecânicos.}
+    \label{tab:testes_anuais_mecanicos}
+\end{table}
+
+\clearpage
+\subsection{Conjuntos Dosimétricos}
+\label{sec:conjuntos_dosimtricos}
+
+\clearpage
+\section{SEVRRA}
+\label{sec:sevrra}
+\inserirPDF{./anexos/PDFs/SEVRRA/SEVRRA.pdf}

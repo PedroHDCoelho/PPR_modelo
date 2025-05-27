@@ -1,0 +1,21 @@
+\chapter{Descrição das Fontes de Referência}
+\label{ch:descricao_fonte-referencia}
+A Instalação dispõe de (1) uma Fonte de Referência Selada, como listado na tabela \ref{tab:fontes_referencia}, para aferição periódica do desempenho dos conjuntos dosimétricos:
+
+\begin{table}[!ht]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+        \begin{NiceTabular}{|p{3cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1cm}|}\hline %
+        \rowcolor{\colorTABLE}
+            \color{white}\bfseries Fonte Selada & \color{white}\bfseries Fabricante & \color{white}\bfseries Modelo  & \color{white}\bfseries Nº Série & \color{white}\bfseries Data Fabricação & \color{white}\bfseries Atividade Inicial & \color{white}\bfseries Tipo\\\hline\hline
+            \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/fontes_referencia.csv}{}%
+            {\obj & \fabricante & \modelo & \nserie & \fabricacao & \atividade & \tipo}%
+            \hline
+        \end{NiceTabular}
+    }
+    \caption{Fonte de Referência.}
+    \label{tab:fontes_referencia}
+\end{table}
+
+\vfill

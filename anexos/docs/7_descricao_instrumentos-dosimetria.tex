@@ -1,0 +1,104 @@
+\chapter{Descrição dos Instrumentos de Dosimetria}
+\label{ch:descricao_instrumentos-dosimetria}
+A Instalação dispõe de (2) dois Conjuntos Dosimétricos, como listado na tabela \ref{tab:conjuntos_dosimetricos}, para realização de dosimetrias absolutas e os respectivos Certificados de Calibração mais recentes dos conjuntos dosimétricos e demais instrumentos de de medição, listados na tabela \ref{tab:instrumentos_medicao} estão dispostos nas seções \ref{sec:certificados_conjuntos-dosimetricos} e \ref{sec:certificados_demais}, nesse anexo.	:
+
+\section{Câmaras de Ionização e Eletrômetros}
+\label{sec:camaras_eletrometros}
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Item & \color{white}\bfseries Fabricante & \color{white}\bfseries Modelo  & \color{white}\bfseries Nº Série\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/conjunto_dosimetrico.csv}{}{%
+        \obj & \fabricante & \modelo & \nserie }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Conjuntos dosimétricos.}
+    \label{tab:conjuntos_dosimetricos}
+\end{table}
+
+  
+\section{Termômetro(s), Barômetro(s), Nível(is), Régua(s) e Cronômetro(s)}
+\label{sec:ter_bar_niv_reg_cro}
+A Instalação dispõe de (1) um Termômetro, (1) um Barômetro, (1) um Nível Digital e (1) uma Régua Calibrados, além de (1) Cronômetro, listados na tabela \ref{tab:instrumentos_medicao}, e os respectivos Certificados de Calibração mais recentes dos Instrumentos a seguir encontram-se disponíveis no final desse anexo, na seção \ref{sec:certificados_demais}.
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{5cm}|p{2.5cm}|p{2cm}|p{2cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Item & \color{white}\bfseries Fabricante & \color{white}\bfseries Modelo  & \color{white}\bfseries Nº Série\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/instrumentos_medicao.csv}{}{%
+        \obj & \fabricante & \modelo & \nserie }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Outros instrumentos de medição.}
+    \label{tab:instrumentos_medicao}
+\end{table}
+
+\pagebreak
+\section{Fantomas}
+\label{sec:fantomas}
+A Instalação dispõe de (1) um fantoma de água para dosimetria absoluta, como listado na tabela \ref{tab:fantoma}:
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{5cm}|p{2.5cm}|p{2cm}|p{2.5cm}|p{2.5cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Item & \color{white}\bfseries Fabricante & \color{white}\bfseries Modelo  & \color{white}\bfseries Dimensões & \color{white}\bfseries Material\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/fantoma.csv}{}{%
+        \obj & \fabricante & \modelo & \dimensoes & \material }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Fantomas.}
+    \label{tab:fantoma}
+\end{table}
+    
+\section{Demais Equipamentos}
+\label{sec:outros_eqp}
+A Instalação dispõe de equipamentos específicos para realização de Controle de Qualidade, conforme listado na tabela \ref{tab:outros_detectores}:
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{3cm}|p{2.5cm}|p{2.5cm}|p{2cm}|p{2cm}|p{1cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Item & \color{white}\bfseries Fabricante & \color{white}\bfseries Modelo & \color{white}\bfseries Nº Série  & \color{white}\bfseries Data Fabricação & \color{white}\bfseries Tipo\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/outros_detectores.csv}{}{%
+        \obj & \fabricante & \modelo & \nserie & \data & \tipo }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Fantoma.}
+    \label{tab:outros_detectores}
+\end{table}
+
+    
+\section{Descrição dos Controles de Qualidade dos Equipamentos de Dosimetria}
+Os equipamentos de dosimetria passam por procedimentos de aferições de desempenho trimestrais, contemplando testes de fuga do conjunto câmara-eletrômetro, medidas de reprodutibilidade e linearidade. Ademais, cada conjunto passa, conforme normas vigentes, por calibração em laboratório secundário bianualmente, porém nunca ambos ao mesmo tempo.
+Os equipamentos descritos nas seções \ref{sec:camaras_eletrometros} e \ref{sec:ter_bar_niv_reg_cro}  passam por calibração em laboratório de metrologia anualmente, conforme normas vigentes.
+
+\pagebreak
+\section{Certificados de Calibração dos Conjuntos Dosimétricos}
+\label{sec:certificados_conjuntos-dosimetricos}
+\inserirPDF{./anexos/PDFs/Certificados de Calibração/Conjunto Dosimetrico/CJ Dosimetrico 1.pdf}
+%\inserirPDF{./anexos/PDFs/Certificados de Calibração/Conjunto Dosimetrico/CJ Dosimetrico 2.pdf}
+%\inserirPDF{./anexos/PDFs/Certificados de Calibração/Conjunto Dosimetrico/Camara Poco.pdf}
+
+\pagebreak
+\section{Certificados de Calibração dos Demais Ítens}
+\label{sec:certificados_demais}
+\inserirPDF{./anexos/PDFs/Certificados de Calibração/Outros/Barometro.pdf}
+%\inserirPDF{./anexos/PDFs/Certificados de Calibração/Outros/Nivel.pdf}
+%\inserirPDF{./anexos/PDFs/Certificados de Calibração/Outros/Regua.pdf}
+%\inserirPDF{./anexos/PDFs/Certificados de Calibração/Outros/Termometro.pdf}

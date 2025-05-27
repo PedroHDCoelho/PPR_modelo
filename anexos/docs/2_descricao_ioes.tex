@@ -1,0 +1,153 @@
+\chapter{Descrição dos IOEs}
+\label{ch:descricao_ioe}
+
+\section{Médicos Radio-Oncologista}
+Os profissionais Médicos Radio-Oncologistas têm como Responsabilidades mínimas no serviço:
+
+\begin{itemize}
+    \item Cuidado integral com os pacientes
+    \item Prescrever todo o tratamento e qualquer alteração que venha a ser necessária durante o mesmo na ficha técnica e prontuário, incluindo: Dose Total, Fracionamento e Dose Diária.
+    \item Escolher a isodose de tratamento ou indicativo de cobertura do Volume-Alvo
+    \item Avaliar o planejamento radioterápico tridimensional e assinar a aprovação do caso
+    \item Verificar as imagens de simulação e tratamento, fazendo possíveis correções.
+\end{itemize}
+
+São os Radio-oncocologistas da instalação:
+
+\begin{table}[!ht]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{6cm}|p{1.5cm}|p{1.5cm}|p{3cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Nome & \color{white}\bfseries CRM & \color{white}\bfseries RB  & \color{white}\bfseries Carga Horária\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/medicos.csv}{}{%
+        \Nome & \CRM & \CB & \Carga }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Equipe de Radio-Oncologistas.}
+    \label{tab:radiooncologistas}
+\end{table}
+
+\section{Físicos Médicos}
+Os Físicos Médicos da Radioterapia têm como responsabilidades mínimas no serviço:
+\begin{itemize}
+    \item Verificação das calibrações do equipamento para assegurar total segurança no tratamento.
+    \item Assegurar que a dose entregue no tratamento esteja de acordo com a Prescrição Radioterapêutica.
+    \item Promover treinamento teórico e prático aos técnicos operadores do acelerador linear.
+    \item Reportar ao médico quaisquer incidentes ocorridos que possam afetar o tratamento ou a segurança do paciente e demais colaboradores.
+    \item Manter um programa de dosimetria para assegurar a qualidade dos tratamentos.
+    \item Realizar cálculos de dose no Sistema de Planejamento Tridimensional de acordo com a prescrição radioterapêutica.
+\end{itemize}
+
+Em específico, remete ao SPR a responsabilidade de:
+\begin{itemize}
+    \item Assegurar que as normas de proteção radiológicas sejam cumpridas.
+\end{itemize}
+
+São os físicos médicos da instalação:
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{7cm}|p{1cm}|p{1cm}|p{3cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Nome & \color{white}\bfseries RT & \color{white}\bfseries RA  & \color{white}\bfseries Carga Horária\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/fisicos_medicos.csv}{}{%
+        \Nome & \RT & \RA & \Carga }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Equipe de Físicos Médicos.}
+    \label{tab:fisicos_medicos}
+\end{table}
+
+\section{Técnicos em Radioterapia}
+Competem aos Técnicos em Radioterapia as seguintes responsabilidades mínimas no serviço:
+\begin{itemize}
+    \item Realizar o tratamento do paciente, conforme determinado pelo Médico e pelo Físico Médico na ficha técnica.
+    \item Chamar o físico ou médico responsável quando houver qualquer dúvida relacionada ao tratamento dos pacientes.
+    \item Programar o aparelho para liberar as unidades monitoras corretas, bem como tamanhos de campo de tratamento e posicionamento de acessórios de imobilização de acordo com o planejamento radioterapêutico.
+    \item Encaminhar as imagens de tratamento e simulação de todos os pacientes aos médicos para possíveis correções durante o curso do tratamento.
+    \item Reportar ao físico, todo e qualquer incidente ocorrido durante o tratamento do paciente.
+    \item Manter a sala do acelerador linear em condições de trabalho.
+\end{itemize}
+
+São os técnicos em radioterapia da instalação:
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{7cm}|p{2cm}|p{3cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Nome & \color{white}\bfseries CRTR & \color{white}\bfseries Carga Horária\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/tecnicos.csv}{}{%
+        \Nome & \CRTR  & \Carga }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Equipe de Técnicos em Radioterapia.}
+    \label{tab:tecnicos}
+\end{table}
+
+\section{Dosimetrista}
+Competem aos Dosimetristas as seguintes responsabilidades mínimas no serviço:
+
+\begin{itemize}
+    \item Realizar exames de Tomografia de Planejamento.
+    \item Importação e Fusão de Imagens de Exames no Sistema de Planejamento Tridimensional.
+    \item Delineamento de Órgãos em Risco e delimitação do Corpo no Sistema de Planejamento Tridimensional.
+    \item Confecção de Máscaras termoplásticas e demais acessórios de imobilização e posicionamento, dentre eles: Vac-Loks, Rampa de Mama, Rampa de Tórax, Apoios de Joelhos e pés para acomodação do paciente durante exame de Tomografia de Planejamento.
+\end{itemize}
+
+É dosimetrista da instalação:
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{6cm}|p{3.5cm}|p{3cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Nome & \color{white}\bfseries Registro Profissional & \color{white}\bfseries Carga Horária\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/dosimetristas.csv}{}{%
+        \Nome & \Registro  & \Carga }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Equipe de Dosimetristas.}
+    \label{tab:dosimetristas}
+\end{table}
+ 
+\section{Enfermagem}
+Os Profissionais em Enfermagem e terão como responsabilidades mínimas na Instalação:
+\begin{itemize}
+    \item Prestação de assistência à saúde do paciente;
+    \item Orientações aos pacientes sobre possíveis efeitos colaterais relacionados ao tratamento;
+    \item Orientações aos pacientes sobre preparos e cuidados necessários para a realização de Exames de Tomografia para Planejamento e/ou Sessões de Tratamento;
+    \item Prestar atendimento personalizado e humanizado, a fim de acolher e individualizar cada paciente;
+    \item Trabalhar Indicadores de Eventos Adversos e Reações Adversas relacionadas aos tratamentos, para identificar caminhos de melhorias no fluxo de atendimento do paciente;
+    \item Prestar socorros em casos de Emergências Médicas ou Acidentes, até a chegada de Profissional Médico e/ou Suporte Avançado para transporte do indivíduo;
+    \item Auxiliar na realização de Exames Clínicos em consultórios médicos;
+    \item Atender consultas periódicas de avaliação durante o curso de tratamento dos pacientes.
+\end{itemize}
+
+A equipe de enfermagem é composta por:
+
+\begin{table}[!h]
+    \centering
+    \resizebox{\linewidth}{!}{
+    \scriptsize
+    \begin{NiceTabular}{|p{6cm}|p{3cm}|p{3cm}|}\hline%
+    \rowcolor{\colorTABLE}
+        \color{white}\bfseries Nome & \color{white}\bfseries COREN & \color{white}\bfseries Carga Horária\\\hline\hline
+        \csvreader[head to column names, late after line = \\\hline]{./anexos/CSVs/enfermagem.csv}{}{%
+        \Nome & \Registro  & \Carga }%
+        \hline
+    \end{NiceTabular}
+    }
+    \caption{Equipe de Enfermagem.}
+    \label{tab:enfermagem}
+\end{table}
